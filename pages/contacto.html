@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/Logo.png" type="image/x-icon">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="container">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../assets/images/Logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./ubicacion.html">Ubicación</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1>Contacto</h1>
+    </header>
+    <main class="main">
+        <form action="contactos.php" class="formContacto">
+            <fieldset class="formCampoContacto">
+                <legend class="formTitulo">Ingrese sus datos para ser contactado</legend>
+                <div class="inputsContacto">
+                    <div class="inputsText">
+                        <input type="text" name="nombre" id="nombre" placeholder="Su nombre" required>
+                        <input type="text" name="telefono" id="telefono" placeholder="Su teléfono" required>
+                        <input type="text" name="email" id="email" placeholder="Su correo electrónico" required>
+                    </div>
+                    <div>
+                        <h>Indique su sexo:</h>
+                        <label for="sexo">Hombre</label>
+                        <input type="radio" name="sexo" id="h">
+                        <label for="sexo">Mujer</label>
+                        <input type="radio" name="sexo" id="m">
+                        <label for="sexo">No binario</label>
+                        <input type="radio" name="sexo" id="nb">
+                    </div>
+                    <div>
+                        <h>¿De dónde eres?</h>
+                        <select name="direccionCliente" id="dCliente" required class="margin10">
+                            <option value=""></option>
+                            <option value="caba">Capital Federal</option>
+                            <option value="prov">Gran Buenos Aires</option>
+                            <option value="interior">Interior del país</option>
+                            <option value="extranjero">De otro país</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h>Déjenos un comentario (opcional)</h>
+                        <br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <br>
+                        <h>Acepta términos y condiciones</h>
+                        <input type="checkbox" name="acepto" value="Si" required>
+                    </div>
+                    <div class="inputsBotones">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar el formulario">
+                    </div>
+                </div>
+            </fieldset>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <h5>©2022 Buenos Aires Bambú, todos los derechos reservados</h5>
+    </footer>
+</body>
+</html>
