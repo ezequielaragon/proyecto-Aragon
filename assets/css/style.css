@@ -60,6 +60,7 @@
     align-items: center;
     justify-content: start;
     margin-left: 20px;
+     cursor: pointer;
 }
 .logo img{
     width: 32px;
