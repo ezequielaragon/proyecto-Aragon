@@ -76,6 +76,7 @@ h1{
  h3{
      text-align: center;
  }
+ 
  .trabajos{
      display: flex;
      width: 100%;
@@ -190,9 +191,7 @@ h1{
     text-align: center;
 }
 .personaImg img{
-    margin-bottom: 10px;
-    width: 300px;
-    height: 400px;
+    height: 100%;
     border: 3px solid rgb(15, 134, 35);
     border-radius: 8px;
 }
