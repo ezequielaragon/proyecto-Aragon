@@ -1,286 +1,294 @@
-@font-face{
-    font-family: "Roboto";
-    src: url("../fonts/Roboto/Roboto-Regular.ttf");
-} 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
-.container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 80px auto auto 60px;
-    grid-template-areas: 
-    "navbar navbar navbar navbar"
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
 }
-.navbar{
-    grid-area: navbar;
-    background-color: rgb(44, 150, 118);
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-}
-.header{
-    grid-area: header;
-    text-align: center;
-    margin: 30px;
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px auto auto 60px;
+  grid-template-areas: "navbar navbar navbar navbar" "header header header header" "main main main main" "footer footer footer footer";
 }
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-    color: rgb(222, 255, 200);
-    background-color: rgb(44, 150, 118);
-    display: flex;
-    align-items: center;
-}
-.navbar ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-.navbar ul li{
-    padding: 5px;
-    font-size: 12px;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: rgb(222, 255, 200);
 
+.navbar {
+  grid-area: navbar;
+  background-color: rgb(44, 150, 118);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin-left: 20px;
-     cursor: pointer;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
-.logo img{
-    width: 32px;
-    border: 2px solid rgb(230, 253, 214);
-    border-radius: 100px;
+.navbar ul li {
+  padding: 5px;
+  font-size: 12px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(222, 255, 200);
+}
 
+.header {
+  grid-area: header;
+  text-align: center;
+  margin: 30px;
 }
-h1{
-    text-align: center;
-    font-size: 42px;
-     
- }
- h3{
-     text-align: center;
- }
- 
- .trabajos{
-     display: flex;
-     width: 100%;
-     justify-content: space-around;
-     flex-wrap: wrap;
- }
- .trabajos img{
-     width: 300px;
-     margin: 30px;
-     border: 3px solid rgb(15, 134, 35);
-     border-radius: 8px;
- }
- h4{
-    text-align: center;
- }
- .redes{
-     display: flex;
-    justify-content: center;
-    margin: 20px;
- }
- .redes img{
-    width: 50px;
- }
 
- .cards{
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  color: rgb(222, 255, 200);
+  background-color: rgb(44, 150, 118);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.logo img {
+  width: 32px;
+  border: 2px solid rgb(230, 253, 214);
+  border-radius: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.trabajos {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.trabajos img {
+  width: 300px;
+  margin: 30px;
+  border: 3px solid rgb(15, 134, 35);
+  border-radius: 8px;
+}
+
+h4 {
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.redes img {
+  width: 50px;
+}
+
+.redes .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.redes .cards .cardInd {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 70%;
+}
+.redes .cards .cardInd .cardImg {
+  display: flex;
+  justify-content: center;
+}
+.redes .cards .cardInd .cardImg img {
+  width: 70%;
+  height: 350px;
+  border: 3px solid rgb(15, 134, 35);
+  border-radius: 8px;
+}
+.redes .cards .cardInd .cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+}
+.redes .cards .cardInd .cardInfo .cardInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.redes .cards .cardInd .cardInfo .cardInputs input {
+  margin: 4px;
+  width: 50%;
+}
+
+.formContacto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.formContacto .formCampoContacto {
+  border: 3px solid rgb(44, 150, 118);
+  border-style: dotted;
+  border-radius: 8px;
+  background-color: rgb(176, 204, 157);
+  margin: 5px;
+}
+.formContacto .formCampoContacto .formTitulo {
+  text-align: center;
+}
+.formContacto .formCampoContacto .inputsContacto {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.formContacto .formCampoContacto .inputsContacto input {
+  margin: 5px;
+}
+.formContacto .formCampoContacto .inputsContacto select {
+  margin: 5px;
+}
+.formContacto .formCampoContacto .inputsContacto .inputsText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.formContacto .formCampoContacto .inputsContacto .inputsBotones input {
+  width: 150px;
+}
+
+.personas {
+  display: flex;
+  flex-direction: column;
+}
+.personas .persona {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.personas .persona .personaImg img {
+  height: 100%;
+  border: 3px solid rgb(15, 134, 35);
+  border-radius: 8px;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.videos iframe {
+  width: 90%;
+  height: 400px;
+  margin: 30px;
+  border: 3px solid rgb(15, 134, 35);
+  border-radius: 8px;
+}
+.videos .instagramVideo {
+  margin-bottom: 50px;
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ubicacion .ubiInfo {
+  margin: 10px;
+}
+.ubicacion .ubiInfo h3 {
+  margin: 0;
+}
+
+.fotoReferencia {
+  width: 70%;
+}
+.fotoReferencia img {
+  width: 100%;
+  border: 3px solid rgb(15, 134, 35);
+  border-radius: 8px;
+}
+
+.mapa {
+  border: 3px solid rgb(15, 134, 35);
+  border-radius: 8px;
+  width: 90%;
+  margin: 10px;
+}
+.mapa iframe {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .logo img {
+    width: 45px;
+  }
+
+  .navbar ul li {
+    font-size: 16px;
+  }
+
+  .cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     width: 100%;
-}
-.cardInd{
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+  }
+  .cards .cardInd {
     margin: 10px;
-    width: 70%;
-}
-.cardImg{
+    width: 30%;
+  }
+  .cards .cardInd .cardImg {
     display: flex;
     justify-content: center;
+  }
 }
-.cardImg img{
-    width: 70%;
-    height: 350px;
-    border: 3px solid rgb(15, 134, 35);
-    border-radius: 8px;
-}
-.cardInfo{
+@media (min-width: 1200px) {
+  .personas {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    text-align: center;
-}
-.cardInputs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cardInputs input{
-    margin: 4px;
+    flex-direction: row;
+  }
+
+  .videos iframe {
     width: 50%;
-}
-.formContacto{
+    height: 500px;
+  }
+
+  .trabajos {
+    display: flex;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.formCampoContacto{
-    border: 3px solid rgb(44, 150, 118);
-    border-style:dotted;
-    border-radius: 8px;
-    background-color: rgb(176, 204, 157);
-    margin: 5px;
-}
-.formTitulo{
-    text-align: center;
-}
-.inputsContacto{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-.inputsText{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-evenly;
-}
-.inputsContacto input{
-    margin: 5px;
-}
-.inputsContacto select{
-    margin: 5px;
-}
-.inputsBotones{
-    display: flex;
-    justify-content: center;
-}
-.inputsBotones input{
-    width: 150px;
-}
-.personas{
-    display: flex;
-    flex-direction: column;
-}
-.persona{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.personaImg img{
-    height: 100%;
-    border: 3px solid rgb(15, 134, 35);
-    border-radius: 8px;
-}
-.videos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.videos iframe{
-    width: 90%;
-    height: 400px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .trabajos img {
+    width: 500px;
     margin: 30px;
     border: 3px solid rgb(15, 134, 35);
     border-radius: 8px;
-}
-.instagramVideo{
-    margin-bottom: 50px;
-    
-}
-.ubicacion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.ubiInfo{
-    margin: 10px;
-}
-.ubiInfo h3{
-    margin: 0;
-}
-.fotoReferencia{
-    width: 70%;
-}
-.fotoReferencia img{
-    width: 100%;
-    border: 3px solid rgb(15, 134, 35);
-    border-radius: 8px;
-}
-.mapa{
-    border: 3px solid rgb(15, 134, 35);
-    border-radius: 8px;
-    width: 90%;
-    margin: 10px;
-}
-.mapa iframe{
-    width: 100%;
-}
-@media(min-width:768px){
-    .logo img{
-        width: 45px;
-    }
-    .navbar ul li{
-        font-size: 16px;
-    }
-    .cards{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
-    }
-    .cardInd{
-        margin: 10px;
-        width: 30%;
-    }
-    .cardImg{
-        display: flex;
-        justify-content: center;
-    }
-
-}
-@media(min-width:1200px){
-    .personas{
-        display: flex;
-        flex-direction: row;
-    }
-    .videos iframe{
-        width: 50%;
-        height: 500px;
-    }
-    .trabajos{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .trabajos img{
-        width: 500px;
-        margin: 30px;
-        border: 3px solid rgb(15, 134, 35);
-        border-radius: 8px;
-    }
+  }
 }
