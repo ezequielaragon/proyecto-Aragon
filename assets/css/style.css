@@ -19,22 +19,6 @@
 .navbar {
   grid-area: navbar;
   background-color: rgb(44, 150, 118);
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-}
-.navbar ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-.navbar ul li {
-  padding: 5px;
-  font-size: 12px;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: rgb(222, 255, 200);
 }
 
 .header {
@@ -47,25 +31,8 @@
   grid-area: main;
 }
 
-.footer {
-  grid-area: footer;
-  color: rgb(222, 255, 200);
-  background-color: rgb(44, 150, 118);
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  margin-left: 20px;
-  cursor: pointer;
-}
-.logo img {
-  width: 32px;
-  border: 2px solid rgb(230, 253, 214);
-  border-radius: 100px;
+img.logoRed {
+  width: 50px;
 }
 
 h1 {
@@ -98,47 +65,46 @@ h4 {
 .redes {
   display: flex;
   justify-content: center;
-  margin: 20px;
 }
-.redes img {
+.redes a img {
   width: 50px;
 }
 
-.redes .cards {
+.cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.redes .cards .cardInd {
+.cards .cardInd {
   display: flex;
   flex-direction: column;
   margin: 10px;
   width: 70%;
 }
-.redes .cards .cardInd .cardImg {
+.cards .cardInd .cardImg {
   display: flex;
   justify-content: center;
 }
-.redes .cards .cardInd .cardImg img {
+.cards .cardInd .cardImg img {
   width: 70%;
   height: 350px;
   border: 3px solid rgb(15, 134, 35);
   border-radius: 8px;
 }
-.redes .cards .cardInd .cardInfo {
+.cards .cardInd .cardInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 10px;
   text-align: center;
 }
-.redes .cards .cardInd .cardInfo .cardInputs {
+.cards .cardInd .cardInfo .cardInputs {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.redes .cards .cardInd .cardInfo .cardInputs input {
+.cards .cardInd .cardInfo .cardInputs input {
   margin: 4px;
   width: 50%;
 }
@@ -150,10 +116,10 @@ h4 {
   margin-bottom: 30px;
 }
 .formContacto .formCampoContacto {
-  border: 3px solid rgb(44, 150, 118);
+  border: 3px solid rgb(15, 134, 35);
   border-style: dotted;
   border-radius: 8px;
-  background-color: rgb(176, 204, 157);
+  background-color: rgb(222, 255, 200);
   margin: 5px;
 }
 .formContacto .formCampoContacto .formTitulo {
@@ -192,6 +158,12 @@ h4 {
   text-align: center;
 }
 .personas .persona .personaImg img {
+  height: 100%;
+  border: 3px solid rgb(15, 134, 35);
+  border-radius: 8px;
+}
+
+.retrato {
   height: 100%;
   border: 3px solid rgb(15, 134, 35);
   border-radius: 8px;
@@ -291,4 +263,22 @@ h4 {
     border: 3px solid rgb(15, 134, 35);
     border-radius: 8px;
   }
+}
+.btn, .btn-botonDoradas, .btn-botonBarnizadas, .btn-botonNaturales {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-botonNaturales {
+  background-color: rgb(41, 187, 12);
+}
+
+.btn-botonBarnizadas {
+  background-color: rgb(164, 241, 75);
+}
+
+.btn-botonDoradas {
+  background-color: rgb(255, 237, 79);
 }
