@@ -64,6 +64,7 @@ h4 {
 
 .redes {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .redes a img {
@@ -84,6 +85,7 @@ h4 {
 }
 .cards .cardInd .cardImg {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .cards .cardInd .cardImg img {
@@ -112,6 +114,7 @@ h4 {
 .formContacto {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-bottom: 30px;
 }
@@ -156,11 +159,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-.personas .persona .personaImg img {
-  height: 100%;
-  border: 3px solid rgb(15, 134, 35);
-  border-radius: 8px;
 }
 
 .retrato {
@@ -227,7 +225,7 @@ h4 {
 
   .cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: space-around;
   }
