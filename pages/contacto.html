@@ -34,53 +34,121 @@
         </div>
       </nav>
     <header class="header">
-        <h1>Contacto</h1>
+        <div class="container-fluid">
+            <div class="row banner">
+                <div class="col-12 contenidoBanner d-flex flex-column text-center justify-content-center">
+                    <h1 class="text-white textoPortada textoBanner">Buenos Aires Bambú</h1>
+                    <h2 class="text-white textoPortada textoBanner fs-2">Contáctenos</h2>
+                </div>
+            </div>
+          </div>
     </header>
     <main class="main">
-        <form action="contactos.php" class="formContacto"  data-aos="fade-up" data-aos-delay="100">
-            <fieldset class="formCampoContacto p-3">
-                <legend class="formTitulo">Ingrese sus datos para ser contactado</legend>
-                <div class="inputsContacto">
-                    <div class="inputsText">
-                        <input type="text" name="nombre" id="nombre" placeholder="Su nombre" required>
-                        <input type="text" name="telefono" id="telefono" placeholder="Su teléfono" required>
-                        <input type="text" name="email" id="email" placeholder="Su correo electrónico" required>
+        <section class="my-4 mx-5 formContacto p-5">
+
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contactanos</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Mandanos cualquier duda o propuesta de trabajo que tengas </p>
+        
+            <div class="row">
+        
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Nombre</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">E-mail</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Asunto</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <select name="direccionCliente" id="dCliente" required class="form-control">
+                                        <option value="seleccion">Click para seleccionar</option>
+                                        <option value="caba">Capital Federal</option>
+                                        <option value="prov">Gran Buenos Aires</option>
+                                        <option value="interior">Interior del país</option>
+                                        <option value="extranjero">De otro país</option>
+                                    </select>
+                                    <label for="subject" class="">¿De dónde sos?</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-12">
+        
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message">Mensaje</label>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                    </form>
+        
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary bg-success border-white" onclick="document.getElementById('contact-form').submit();">Send</a>
                     </div>
-                    <div>
-                        <h5>Indique su sexo:</h5>
-                        <label for="sexo">Hombre</label>
-                        <input type="radio" name="sexo" id="h">
-                        <label for="sexo">Mujer</label>
-                        <input type="radio" name="sexo" id="m">
-                        <label for="sexo">No binario</label>
-                        <input type="radio" name="sexo" id="nb">
-                    </div>
-                    <div>
-                        <h5>¿De dónde eres?</h5>
-                        <select name="direccionCliente" id="dCliente" required class="margin10">
-                            <option value=""></option>
-                            <option value="caba">Capital Federal</option>
-                            <option value="prov">Gran Buenos Aires</option>
-                            <option value="interior">Interior del país</option>
-                            <option value="extranjero">De otro país</option>
-                        </select>
-                    </div>
-                    <div>
-                        <h5>Déjenos un comentario (opcional)</h5>
-                        <br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <br>
-                        <h5>Acepta términos y condiciones</h5>
-                        <input type="checkbox" name="acepto" value="Si" required>
-                    </div>
-                    <div class="inputsBotones">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar el formulario">
-                    </div>
+                    <div class="status"></div>
                 </div>
-            </fieldset>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Lucía Rueda 3180, B1742JHN Paso del Rey, Provincia de Buenos Aires</p>
+                        </li>
+        
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p> WhatsApp +54 9 11 2790-4478</p>
+                        </li>
+        
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>buenosairesbambu@hotmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
             </div>
-        </form>
+        
+        </section>
     </main>
     <footer class="text-center text-lg-start" style="background-color: rgb(44, 150, 118);">
         <div class="container d-flex justify-content-center py-2 redes">

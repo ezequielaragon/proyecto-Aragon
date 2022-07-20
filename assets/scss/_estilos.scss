@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto;
+    overflow-x: hidden;
 }
 @mixin flex-row-center{
     display: flex;
@@ -26,7 +27,17 @@
 .header{
     grid-area: header;
     text-align: center;
-    margin: 30px;
+}
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    background-position: center;
+        .textoBanner{
+            font-size: 5rem;
+            text-shadow: $textShadow;
+        }
 
 }
 .main{
@@ -103,40 +114,11 @@ h1{
     }
 }
 .formContacto{
-    width: 100%;
-    @include flex-row-center;
-    margin-bottom: 30px;
-    .formCampoContacto{
-        border: map-get($colores , borde);
-        border-style:dotted;
-        border-radius: 8px;
-        background-color: map-get($colores , colorSecundario);
-        margin: 5px;
-        .formTitulo{
-            text-align: center;
-        }
-        .inputsContacto{
-            display: flex;
-            flex-direction: column;
-            margin: 10px;
-            input{
-                margin: 5px;
-            }
-            select{
-                margin: 5px;
-            }
-            .inputsText{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                justify-content: space-evenly;
-            }
-            .inputsBotones input{
-                width: 150px;
-            }
-        }
-    }
+    background-color: map-get($colores, colorPrimario);
+    border-radius: 15px;
+    color: #fff;
 }
+
 .personas{
     display: flex;
     flex-direction: column;
@@ -189,9 +171,7 @@ h1{
 }
 .mapa{
     border: map-get($colores , borde);
-    border-radius: 8px;
-    width: 90%;
-    margin: 10px;
+    border-radius: 5px;
     iframe{
         width: 100%;
     }

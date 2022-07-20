@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Roboto;
+  overflow-x: hidden;
 }
 
 .container {
@@ -24,7 +25,18 @@
 .header {
   grid-area: header;
   text-align: center;
-  margin: 30px;
+}
+
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 450px;
+  background-position: center;
+}
+.banner .textoBanner {
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 .main {
@@ -112,41 +124,9 @@ h4 {
 }
 
 .formContacto {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-.formContacto .formCampoContacto {
-  border: 3px solid rgb(15, 134, 35);
-  border-style: dotted;
-  border-radius: 8px;
-  background-color: rgb(222, 255, 200);
-  margin: 5px;
-}
-.formContacto .formCampoContacto .formTitulo {
-  text-align: center;
-}
-.formContacto .formCampoContacto .inputsContacto {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-.formContacto .formCampoContacto .inputsContacto input {
-  margin: 5px;
-}
-.formContacto .formCampoContacto .inputsContacto select {
-  margin: 5px;
-}
-.formContacto .formCampoContacto .inputsContacto .inputsText {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-evenly;
-}
-.formContacto .formCampoContacto .inputsContacto .inputsBotones input {
-  width: 150px;
+  background-color: rgb(44, 150, 118);
+  border-radius: 15px;
+  color: #fff;
 }
 
 .personas {
@@ -206,9 +186,7 @@ h4 {
 
 .mapa {
   border: 3px solid rgb(15, 134, 35);
-  border-radius: 8px;
-  width: 90%;
-  margin: 10px;
+  border-radius: 5px;
 }
 .mapa iframe {
   width: 100%;

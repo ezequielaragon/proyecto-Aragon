@@ -34,53 +34,68 @@
         </div>
       </nav>
     <header class="header">
-        <h1>Productos</h1>
+        <div class="container-fluid">
+            <div class="row banner">
+                <div class="col-12 contenidoBanner d-flex flex-column text-center justify-content-center">
+                    <h1 class="text-white textoPortada textoBanner">Buenos Aires Bambú</h1>
+                    <h2 class="text-white textoPortada textoBanner fs-2">Nuestros productos</h2>
+                </div>
+            </div>
+          </div>
     </header>
-    <main class="containerMain main">
-        <div class="cards d-flex flex-column">
-            <div class="cardInd" data-aos="fade-up" data-aos-delay="200">
-                <div class="cardImg">
-                    <img src="../assets/images/natural.jpg" alt="imgNat">
+    <main class="main row justify-content-center mb-4 mx-5 overflow-hidden">
+        <div class="card mb-3 col-12 col-md-4 m-5" data-aos="fade-up" data-aos-delay="400" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 text-center">
+                <img src="../assets/images/natural.jpg" class="img-fluid rounded-start" alt="...">
+                <button type="button" class="btn my-2 btn-botonNaturales">
+                    <span>Comprar</span>
+                </button>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Panel de cañas naturales</h5>
+                  <p class="card-text">Cañas de tacuara seleccionadas traídas directamente de Misiones y lavadas artesanalmente.</p>
+                  <p class="card-text"><small class="text-muted">Stock disponible</small></p>
                 </div>
-                <div class="cardInfo">
-                    <p class="text-decoration-underline fs-3">Panel de cañas Naturales</p>
-                    <p>Precio del metro cuadrado: $</p>
-                    <div class="cardInputs">
-                        <input type="text" name="ancho" id="ancho" placeholder="Coloque el ancho">
-                        <input type="text" name="altura" id="altura" placeholder="Coloque la altura">
-                        <input type="button" class="btn-botonNaturales" value="Calcular precio">
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="cardInd" data-aos="fade-up" data-aos-delay="400">
-                <div class="cardImg">
-                    <img src="../assets/images/naturalBarnizada.jpg" alt="imgNat">
+          </div>
+          <div class="card mb-3 col-12 col-md-4 m-5" data-aos="fade-up" data-aos-delay="400" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 text-center">
+                <img src="../assets/images/naturalBarnizada.jpg" class="img-fluid rounded-start" alt="...">
+                <button type="button" class="btn my-2 btn-botonNaturales">
+                    <span>Comprar</span>
+                </button>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Panel de cañas barnizadas</h5>
+                  <p class="card-text">Cañas de tacuara seleccionadas traídas directamente de Misiones barnizadas y lavadas artesanalmente.</p>
+                  <p class="card-text"><small class="text-muted">Stock disponible</small></p>
                 </div>
-                <div class="cardInfo">
-                    <p class="text-decoration-underline fs-3">Panel de cañas Barnizadas</p>
-                    <p>Precio del metro cuadrado: $</p>
-                    <div class="cardInputs">
-                    <input type="text" name="ancho" id="ancho" placeholder="Coloque el ancho">
-                    <input type="text" name="altura" id="altura" placeholder="Coloque la altura">
-                    <input type="button" class="btn-botonBarnizadas" value="Calcular precio">
-                    </div>
-                </div>
-                </div>
-            <div class="cardInd" data-aos="fade-up" data-aos-delay="600">
-            <div class="cardImg">
-                <img src="../assets/images/dorada.jpg" alt="imgNat">
+              </div>
             </div>
-            <div class="cardInfo">
-                <p class="text-decoration-underline fs-3">Panel de cañas Doradas</p>
-                <p>Precio del metro cuadrado: $</p>
-                <div class="cardInputs">
-                    <input type="text" name="ancho" id="ancho" placeholder="Coloque el ancho">
-                    <input type="text" name="altura" id="altura" placeholder="Coloque la altura">
-                    <input type="button" class="btn-botonDoradas" value="Calcular precio">
+          </div> 
+          <div class="card mb-3 col-12 col-md-4 m-5" data-aos="fade-up" data-aos-delay="400" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 text-center">
+                <img src="../assets/images/dorada.jpg" class="img-fluid rounded-start" alt="imgDoradas">
+                <button type="button" class="btn my-2 btn-botonNaturales">
+                    <span>Comprar</span>
+                </button>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Panel de cañas doradas</h5>
+                  <p class="card-text">Cañas de tacuara seleccionadas traídas directamente de Misiones flameadas, barnizadas y lavadas artesanalmente.</p>
+                  <p class="card-text"><small class="text-muted">Stock disponible</small></p>
                 </div>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
+            
     </main>
     <footer class="text-center text-lg-start footerProductos" style="background-color: rgb(44, 150, 118);">
         <div class="container d-flex justify-content-center py-2 redes">
