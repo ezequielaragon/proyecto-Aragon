@@ -76,6 +76,12 @@ h1{
         width: 50px;
      }
  }
+ .botonHov{
+    color: white;
+ }
+ .botonHov:hover{
+    background-color: rgb(163, 206, 122);
+ }
  .cards{
     display: flex;
     flex-direction: column;
